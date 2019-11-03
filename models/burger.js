@@ -2,27 +2,26 @@ const orm = require("../config/orm.js");
 console.log(orm);
 
 const burger = {
-    findAll: function(){
+    findAll: function(callback){
         orm.findAll("burgers", function(res){
-            console.log(res);
+            callback(res);
         })
     },
-    create: function(){
+    create: function(callback){
         orm.create("burgers", function(res){
-            console.log(res);
+            callback(res);
         })
     },
-    update: function(){
+    update: function(callback){
         orm.update("burgers",function(res){
-            console.log(res);
+            callback(res);
         })
     },
-    delete: function(){
+    delete: function(callback){
         orm.delete("burgers", function(res){
-            console.log(res);
+            callback(res);
         });
     }
 };
 
 module.exports = burger;
-console.log(burger.findAll);
