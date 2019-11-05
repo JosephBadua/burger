@@ -1,16 +1,16 @@
-<div class="container">
-  <div class="row">
+<div class="container-fluid">
+  <div class="row text-center">
     <div class="col-md-12">
       <h1>Eat Da Burger</h1>
     </div>
   </div>
-  <div class="row">
+  <div class="row text-center">
     <div class="col-md-6">
       <h1>Burgers to Eat</h1>
        {{#each burgers}}
       {{#unless this.devoured}}
     <ul>
-      {{this.id}}. {{this.burger_name}}
+      {{this.id}}. {{this.burger_name}} <form method="POST" action="/burgers/update?_method=PUT"><button id="eat" name="burger_id" value="{{this.id}}">EAT ME</button></form>
     </ul>
     {{/unless}}
     {{/each}}
@@ -24,6 +24,14 @@
     </ul>
     {{/if}}
     {{/each}}
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-md-12">
+      <form method="POST" action="/burgers/create">
+      <input type="text" name="burger_name">
+      <button type="submit">Add to the Menu</button>
+      </form>
     </div>
   </div>
 </div>
