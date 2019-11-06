@@ -10,7 +10,10 @@
        {{#each burgers}}
       {{#unless this.devoured}}
     <ul>
-      {{this.id}}. {{this.burger_name}} <form method="POST" action="/burgers/update?_method=PUT"><button id="eat" name="burger_id" value="{{this.id}}">EAT ME</button></form>
+      {{this.id}}. {{this.burger_name}} 
+      <form method="POST" action="/burgers/update?_method=PUT">
+      <button id="eat" name="burger_id" value="{{this.id}}">EAT ME</button>
+      </form>
     </ul>
     {{/unless}}
     {{/each}}
