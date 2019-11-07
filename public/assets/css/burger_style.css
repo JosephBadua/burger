@@ -1,3 +1,7 @@
 body {
     background: orange;
 }
+#patty {
+    height: 50vh;
+    margin-bottom: 5rem;
+}
