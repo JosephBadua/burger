@@ -1,18 +1,29 @@
-<div class="container-fluid">
-  <div class="row text-center">
+<div class="container">
+    <div class="row text-center">
     <div class="col-md-12">
-      <h1>Eat Da Burger</h1>
+      <h1 class="burgerTitle">Welcome to Joseph's Burgers</h1>
     </div>
   </div>
+  <div class="row">
+    <div class="col-md-6 text-right">
+      <h2>Daily Special</h2>
+    </div>
+    <div class="col-md-6 special">
+
+    </div>
+  </div>
+</div>
+<br>
+<div class="container-fluid">
   <div class="row text-center">
     <div class="col-md-4">
-      <h1>Burgers to Eat</h1>
+      <h1 class="titleTop">Freshly Made Burgers</h1>
        {{#each burgers}}
       {{#unless this.devoured}}
     <ul>
-      {{this.id}}. {{this.burger_name}} 
+      <h2 class="burgerName">{{this.id}}. {{this.burger_name}} </h2>
       <form method="POST" action="/burgers/update?_method=PUT">
-      <button id="eat" name="burger_id" value="{{this.id}}">EAT ME</button>
+      <button class="burgerButton" id="eat" name="burger_id" value="{{this.id}}">EAT ME</button>
       </form>
     </ul>
     {{/unless}}
@@ -22,11 +33,11 @@
        <img id="patty" src="../public/assets/img/burger.jpg">
     </div>
     <div class="col-md-4">
-      <h1>Burgers that Were Eaten</h1>
+      <h1 class="titleTop">Burgers We've Eaten</h1>
        {{#each burgers}}
       {{#if this.devoured}}
     <ul>
-      {{this.id}}. {{this.burger_name}}
+      <h2 class="burgerEaten">{{this.id}}. {{this.burger_name}}</h2>
     </ul>
     {{/if}}
     {{/each}}
@@ -34,9 +45,16 @@
   </div>
   <div class="row text-center">
     <div class="col-md-12">
+      <h1 class="newBurger">
+        Got an idea for a Burger?
+      </h1>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-md-12">
       <form method="POST" action="/burgers/create">
-      <input type="text" name="burger_name">
-      <button type="submit">Add to the Menu</button>
+      <input class="burgerInput" type="text" name="burger_name" placeholder="Turkey Bacon Burger">
+      <button class="burgerSubmit"  type="submit">Add to the Menu</button>
       </form>
     </div>
   </div>

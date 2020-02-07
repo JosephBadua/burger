@@ -1,7 +1,65 @@
 body {
     background: orange;
 }
+/* Middle Image */
 #patty {
     height: 50vh;
     margin-bottom: 5rem;
+    padding: 0.5em;
+    background: black;
+}
+/* Input */
+.burgerInput {
+    font-size: 1.1em;
+    padding: 0.4em;
+    margin: 1em;
+    border: 1px solid black;
+}
+
+/* Welcome to Joseph's Burgers */
+.burgerTitle {
+    font-size: 4em;
+    padding: 0.5em;
+}
+
+/* Data Burgers */
+.burgerName {
+    font-size: 2em;
+}
+.burgerEaten {
+    font-size: 2em;
+}
+
+/* Data Title */
+.titleTop {
+    /* ADD CUSTOM FONT */
+    font-size: 3em;
+    text-align: center;
+}
+
+/* Buttons */
+.burgerButton, .burgerSubmit {
+    font-size: 1.3em;
+    border-radius: 0.2em;
+    background: lightgoldenrodyellow;
+}
+.burgerButton:hover, .burgerSubmit:hover {
+    box-shadow: 2px 2px royalblue;
+    animation: pulse 0.8s infinite forwards;
+    transition: all 0.2s;
+}
+
+
+/* Animation */
+
+@keyframes pulse {
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.0);
+    }
 }
