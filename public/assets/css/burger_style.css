@@ -1,5 +1,7 @@
 body {
     background-image: url("../img/pixel-art-cheeseburger-seamless-background.jpg");
+    font-family: 'Sriracha', cursive;
+
 }
 
 .container-fluid {
@@ -24,8 +26,10 @@ body {
 .burgerTitle {
     font-size: 4em;
     padding: 0.5em;
-    background: gainsboro;
+    background: lightgreen !important;
+    border-radius: 0.5em !important;
     margin: 0.2em;
+    border: 5px solid black;
 }
 
 /* Data Burgers */
@@ -64,20 +68,25 @@ body {
     width: 40%;
     margin: auto;
     margin-top: 2em;
-    background: gainsboro;
-    border: 2px solid blue;
+    background: lightgreen;
+    border-top: 2px solid blue;
+    border-left: 2px solid blue;
+    border-right: 2px solid blue;
 }
 .bottomSection1 {
     width: 40%;
     margin: auto;
-    background: gainsboro;
-    border: 2px solid blue;
+    background: lightgreen;
+    border-bottom: 2px solid blue;
+    border-left: 2px solid blue;
+    border-right: 2px solid blue;
 }
 
 /* Burger Special */
 .specialBack {
     background: lightgreen;
     border-radius: 0.5em;
+    border: 3px solid black;
 }
 /* Animation */
 
@@ -92,3 +101,25 @@ body {
         transform: scale(1.0);
     }
 }
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
