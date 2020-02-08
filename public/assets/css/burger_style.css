@@ -1,10 +1,14 @@
 body {
-    background: orange;
+    background-image: url("../img/pixel-art-cheeseburger-seamless-background.jpg");
+}
+
+.container-fluid {
+    width: 90% !important;
 }
 /* Middle Image */
 #patty {
-    height: 50vh;
-    margin-bottom: 5rem;
+    height: 40vh;
+    margin-bottom: 3em;
     padding: 0.5em;
     background: black;
 }
@@ -20,6 +24,8 @@ body {
 .burgerTitle {
     font-size: 4em;
     padding: 0.5em;
+    background: gainsboro;
+    margin: 0.2em;
 }
 
 /* Data Burgers */
@@ -28,6 +34,12 @@ body {
 }
 .burgerEaten {
     font-size: 2em;
+}
+.burgerSection {
+    background: gainsboro;
+    border: 5px solid blue;
+    overflow: scroll;
+    height: 50vh;
 }
 
 /* Data Title */
@@ -48,8 +60,25 @@ body {
     animation: pulse 0.8s infinite forwards;
     transition: all 0.2s;
 }
+.bottomSection {
+    width: 40%;
+    margin: auto;
+    margin-top: 2em;
+    background: gainsboro;
+    border: 2px solid blue;
+}
+.bottomSection1 {
+    width: 40%;
+    margin: auto;
+    background: gainsboro;
+    border: 2px solid blue;
+}
 
-
+/* Burger Special */
+.specialBack {
+    background: lightgreen;
+    border-radius: 0.5em;
+}
 /* Animation */
 
 @keyframes pulse {
