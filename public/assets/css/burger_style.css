@@ -26,7 +26,7 @@ body {
 .burgerTitle {
     font-size: 4em;
     padding: 0.5em;
-    background: lightgreen !important;
+    background: rgb(197, 116, 116) !important;
     border-radius: 0.5em !important;
     margin: 0.2em;
     border: 5px solid black;
@@ -40,10 +40,12 @@ body {
     font-size: 2em;
 }
 .burgerSection {
-    background: gainsboro;
-    border: 5px solid blue;
+    background: limegreen;
+    padding: 0.3em;
+    border: 10px solid blue;
     overflow: scroll;
     height: 50vh;
+    overflow-x: hidden;
 }
 
 /* Data Title */
@@ -68,7 +70,8 @@ body {
     width: 40%;
     margin: auto;
     margin-top: 2em;
-    background: lightgreen;
+    background: rgb(197, 116, 116);
+
     border-top: 2px solid blue;
     border-left: 2px solid blue;
     border-right: 2px solid blue;
@@ -76,7 +79,8 @@ body {
 .bottomSection1 {
     width: 40%;
     margin: auto;
-    background: lightgreen;
+    background: rgb(197, 116, 116);
+
     border-bottom: 2px solid blue;
     border-left: 2px solid blue;
     border-right: 2px solid blue;
@@ -84,7 +88,7 @@ body {
 
 /* Burger Special */
 .specialBack {
-    background: lightgreen;
+    background: rgb(197, 116, 116);
     border-radius: 0.5em;
     border: 3px solid black;
 }
